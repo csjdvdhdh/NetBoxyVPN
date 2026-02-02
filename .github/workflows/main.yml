@@ -1,30 +1,5 @@
-name: NetBoxyVPN CI
-
-# تشغيل الأتمتة عند إضافة كود جديد (Push) أو فتح طلب تعديل (Pull Request)
-on:
-  push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
-  workflow_dispatch: # يسمح لك بتشغيل الكود يدوياً
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      # الخطوة 1: سحب الكود من المستودع
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      # الخطوة 2: طباعة رسالة ترحيبية وتجهيز البيئة
-      - name: Initialize NetBoxyVPN
-        run: |
-          echo "Starting NetBoxyVPN Workflow..."
-          echo "Current Branch: ${{ github.ref }}"
-          
-      # الخطوة 3: (اختياري) إذا كان مشروعك يحتاج تشغيل أمر معين ضع كودك هنا
-      - name: Run Test Script
-        run: |
-          echo "Checking system files..."
-          ls -R
+      - name: Upload Application
+        uses: actions/upload-artifact@v4
+        with:
+          name: NetBoxyVPN-App
+          path: . # هنا نحدد المجلد الذي يحتوي على التطبيق الجاهز
