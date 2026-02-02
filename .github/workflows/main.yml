@@ -1,5 +1,0 @@
-      - name: Upload Application
-        uses: actions/upload-artifact@v4
-        with:
-          name: NetBoxyVPN-App
-          path: . # هنا نحدد المجلد الذي يحتوي على التطبيق الجاهز
