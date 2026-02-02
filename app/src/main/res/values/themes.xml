@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NetBoxy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#00d4ff</item>
+        <item name="colorPrimaryVariant">#00a3cc</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorSecondary">#6c5ce7</item>
+        <item name="colorSecondaryVariant">#5b4cdb</item>
+        <item name="colorOnSecondary">#ffffff</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
